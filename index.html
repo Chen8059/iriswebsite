@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">
+          function checkserAgent(){
+          var userAgentInfo=navigator.userAgent;
+          var userAgentKeywords=new Array(“Android", “iPhone" ,"SymbianOS", “Windows Phone", “iPad", “iPod", “MQQBrowser");
+          var flag=false;
+          if(userAgentInfo.indexOf(“Windows NT")==-1){
+          flag=true;
+          }
+          return flag;
+          }
+          if(checkserAgent()){
+          document.location.href="https://chen8059.github.io/iriswebsite/";
+          }
+   </script>
 
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
